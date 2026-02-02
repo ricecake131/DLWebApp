@@ -9,3 +9,9 @@ script:
 artifacts:
 reports:
 junit: junit.xml
+deployment:
+stage: deploy
+script:
+- curl https://api.render.com/deploy/srv-d5vt6bfpm1nc73cstvjg?key=DfH1Uijzkrw
+only:
+- main
